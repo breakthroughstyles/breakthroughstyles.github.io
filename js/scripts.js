@@ -23,9 +23,11 @@ Version      : 1.0
     }
     $(window).on('scroll', function() {
       if ($(window).scrollTop() > 70) {
-        $('.site-navigation, .header-white, .header').addClass('navbar-fixed');
+        $('.site-navigation, .header-white, .header').addClass('navbar-fixed navbar-fixed-dark');
+        $('.site-navigation, .header-white, .header').removeClass('navbar-fixed-light');
       } else {
-        $('.site-navigation, .header-white, .header').removeClass('navbar-fixed');
+        $('.site-navigation, .header-white, .header').removeClass('navbar-fixed navbar-fixed-dark');
+        $('.site-navigation, .header-white, .header').addClass('navbar-fixed-light');
       }
     });
     /*END MENU JS*/
